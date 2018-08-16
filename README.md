@@ -1,10 +1,6 @@
 Face to BMI: Keras Implementation https://arxiv.org/abs/1703.03156
 # Methodology
 
-The system is composed of two stages: (i) Feature extraction, and (ii) Regression model. For feature extraction, 
-. Both of these models are deep convolutional models
-with millions of parameters, and trained on millions of
-images. The features from the fc6 layer are extracted for
-each face image in our training set. For the BMI regression,
-we use epsilon support vector regression models (Smola and
-Vapnik 1997) due to its robust generalization behavior
+The system is composed of two stages: (i) Feature extraction, and (ii) Regression model. For feature extraction, we use the weights from VGG 16 (fc16 layer) are extracted for each face image in our training set. For BMI prediction, Support Vector Regression models is used using the feature extracted from previous layers.
+
+Credits - E. Kocabey, M. Camurcu, F. Ofli, Y. Aytar, J. Marin, A. Torralba, and I. Weber. Face-to-BMI: Using Computer Vision to Infer Body Mass Index on Social Media. arXiv:1703.03156 [cs], Mar. 2017. arXiv: 1703.03156
